@@ -1,6 +1,6 @@
 {
   "name": "hikvision-plugin-player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hikvision Player By WebControl Plugin",
   "main": "index.js",
   "scripts": {

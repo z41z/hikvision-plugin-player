@@ -50,7 +50,7 @@ class Player {
   }
   async initPlayer(resol) {
     return new Promise((resolve) => {
-      let { el, width, height, ip, port, layout, appkey, isShowToolbar = true } = this.config
+      let { el, width, height, host, port, layout, appkey, isShowToolbar = true } = this.config
       this.webControl.JS_CreateWnd(el, width, height).then(async () => {
         let secretEncode = await this.getPubKey()
         const playMode = 0; //初始播放模式：0-预览，1-回放
@@ -67,7 +67,7 @@ class Player {
             argument: JSON.stringify({
               appkey, //API网关提供的appkey
               secret: secretEncode, //API网关提供的secret
-              ip, //API网关IP地址
+              ip: host, //API网关IP地址
               playMode: playMode, //播放模式（决定显示预览还是回放界面）
               port, //端口
               snapDir: snapDir, //抓图存储路径
