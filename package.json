@@ -1,0 +1,23 @@
+{
+  "name": "hikvision-plugin-player",
+  "version": "1.0.2",
+  "description": "Hikvision Player By WebControl Plugin",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build&&webpack --mode production --config=webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z41z/hikvision-plugin-player.git"
+  },
+  "keywords": [
+    "npm",
+    "init"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/z41z/hikvision-plugin-player/issues"
+  },
+  "homepage": "https://github.com/z41z/hikvision-plugin-player#readme"
+}
